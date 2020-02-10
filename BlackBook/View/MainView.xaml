@@ -8,14 +8,36 @@
         xmlns:viewModels="clr-namespace:BlackBook.ViewModels"
         mc:Ignorable="d"
         Title="BlackBook" Height="450" Width="800"
-        Style="{StaticResource ModernWindowStyle}"
-        ResizeMode="NoResize">
+        Style="{StaticResource ModernWindowStyle}">
 
     <Window.DataContext>
         <viewModels:MainViewModel/>
     </Window.DataContext>
     
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Column="1" Grid.Row="0">
+            <TextBlock Text="Login" FontSize="24" 
+                   Margin="0,0,10,0" ToolTip="Login to Use"/>
+            <TextBlock Text="People" FontSize="24"
+                   Margin="0,0,10,0" Foreground="DimGray" ToolTip="Select Person"/>
+            <TextBlock Text="Search" FontSize="24"
+                   Margin="0,0,10,0" Foreground="DimGray" ToolTip="Search People"/>
+            <TextBlock Text="Settings" FontSize="24"
+                   Margin="0,0,10,0" Foreground="DimGray" ToolTip="Configure Parameters"/>
+        </DockPanel>
     </Grid>
 </Window>
