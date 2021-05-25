@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Company>https://github.com/Plus1XP</Company>
+    <Authors>Plus1XP</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BlackEngine\BlackEngine.csproj" />
+  </ItemGroup>
+
+</Project>

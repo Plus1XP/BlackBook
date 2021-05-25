@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackBook", "BlackBook\BlackBook.csproj", "{2D885D4F-17FE-480C-9CAD-7920C96E870A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackWeb", "BlackWeb\BlackWeb.csproj", "{BCE68A72-0391-4B37-A151-45AA5B93F5A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlackEngine", "BlackEngine\BlackEngine.csproj", "{31ACE35D-CD98-4BB1-943B-817CD964198B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlackUI", "BlackUI\BlackUI.csproj", "{F333D377-AA97-436C-A6A8-76D85EEF27E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2D885D4F-17FE-480C-9CAD-7920C96E870A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D885D4F-17FE-480C-9CAD-7920C96E870A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D885D4F-17FE-480C-9CAD-7920C96E870A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D885D4F-17FE-480C-9CAD-7920C96E870A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE68A72-0391-4B37-A151-45AA5B93F5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE68A72-0391-4B37-A151-45AA5B93F5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE68A72-0391-4B37-A151-45AA5B93F5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE68A72-0391-4B37-A151-45AA5B93F5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31ACE35D-CD98-4BB1-943B-817CD964198B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31ACE35D-CD98-4BB1-943B-817CD964198B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31ACE35D-CD98-4BB1-943B-817CD964198B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31ACE35D-CD98-4BB1-943B-817CD964198B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F333D377-AA97-436C-A6A8-76D85EEF27E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F333D377-AA97-436C-A6A8-76D85EEF27E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F333D377-AA97-436C-A6A8-76D85EEF27E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F333D377-AA97-436C-A6A8-76D85EEF27E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
