@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@using System.Data
+@using BlackEngine.Models
+@model List<IProfile>
+<div class="text-center">
+    <h1 class="display-4">BlackBook</h1>
+    <p>Interactive contact manager.</p>
+</div>
+
+@*<h4 style="text-align:right; color:blue">ADD</h4>*@
+<a asp-action="Create">Add Profile</a>
+
+<table class="table">
+    @{Profile profile = new Profile(); }
+    <tr>
+        <td>
+            <b>@Html.DisplayNameFor(itemName =>  profile.FirstName)</b>
+        </td>
+        <td>
+            <b>@Html.DisplayNameFor(itemName => IndexViewModel.LastName)</b>
+        </td>
+        <td>
+            <b>@Html.DisplayNameFor(itemName => IndexViewModel.Alias)</b>
+        </td>
+        <td>
+            <b>@Html.DisplayNameFor(itemName => IndexViewModel.Location)</b>
+        </td>
+        <td>
+            <b>@Html.DisplayNameFor(itemName => IndexViewModel.Age)</b>
+        </td>
+        <td>
+            <b>@Html.DisplayNameFor(itemName => IndexViewModel.DOB)</b>
+        </td>
+        <td>
+            <b>@Html.DisplayNameFor(itemName => IndexViewModel.Mobile)</b>
+        </td>
+        <td>
+            <b>@Html.DisplayNameFor(itemName => IndexViewModel.Twitter)</b>
+        </td>
+        <td>
+            <b>@Html.DisplayNameFor(itemName => IndexViewModel.Instagram)</b>
+        </td>
+        <td>
+            <b>@Html.DisplayNameFor(itemName => IndexViewModel.Facebook)</b>
+        </td>
+        <td>
+            <b>@Html.DisplayNameFor(itemName => IndexViewModel.Snapchat)</b>
+        </td>
+        <td>
+            <b>@Html.DisplayNameFor(itemName => IndexViewModel.AltSocialMedia)</b>
+        </td>
+    </tr>
+
+    @*<a asp-action="Details" asp-route-id="@item.Id">Details</a> |*@
+
+    @foreach (var item in Model)
+    {
+        <tr onclick="location.href = '@(Url.Action("Details", "Home", new { id = item.ID }))'">
+
+
+            <td>
+                @Html.DisplayFor(itemName => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(itemName => item.LastName)
+            </td>
+            <td>
+                @Html.DisplayFor(itemName => item.Alias)
+            </td>
+            <td>
+                @Html.DisplayFor(itemName => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(itemName => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(itemName => item.DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(itemName => item.Mobile)
+            </td>
+            <td>
+                @Html.DisplayFor(itemName => item.Twitter)
+            </td>
+            <td>
+                @Html.DisplayFor(itemName => item.Instagram)
+            </td>
+            <td>
+                @Html.DisplayFor(itemName => item.Facebook)
+            </td>
+            <td>
+                @Html.DisplayFor(itemName => item.Snapchat)
+            </td>
+            <td>
+                @Html.DisplayFor(itemName => item.AltSocialMedia)
+            </td>
+        </tr>
+    }
+</table>
